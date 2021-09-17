@@ -238,10 +238,6 @@ form input[type="submit"]:hover{
 }
 
 /* footer */
-.footer{
-    
-}
-
 .nav-footer{
     padding: 1rem;
 }
@@ -260,3 +256,49 @@ form input[type="submit"]:hover{
 .nav-footer a:last-of-type{
     margin-bottom: 0;
 }
+
+/* Redes Sociales */
+.sociales ul{
+    display: flex;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex: 1 0 auto; 
+    list-style: none;
+}
+
+.sociales ul li{
+    margin-right: 1rem;
+    
+}
+
+.sociales ul li:last-of-type {
+    margin-right: 0;
+}
+
+.sociales ul li a{
+    text-decoration: none;
+}
+
+.sociales ul li a:before{
+    font-family: "Font Awesome 5 Brands";
+    color: var(--oscuro);
+    font-size: 1.6rem; 
+}
+
+.sociales ul li a[href*='facebook.com']:before{
+    content: "\f39e";
+}
+
+.sociales ul li a[href*='twitter.com']:before {
+    content: "\f099";
+}
+
+.sociales ul li a[href*='instagram.com']:before {
+    content: "\f16d";
+}
+
+.sociales ul span{
+    display: none;
+} 
+
