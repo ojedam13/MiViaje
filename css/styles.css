@@ -216,3 +216,23 @@ form input[type="submit"]:hover{
         text-align: right;
     }
 }
+
+/* Destinos populares */
+.destinos .contenedor-cards{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+}
+
+.destinos .card{
+    position: relative;
+}
+.destinos .info{
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    
+}
+
+.destinos .info .titulo{
+    font-size: 1.8rem;
+    color: var(--claro);
+}
