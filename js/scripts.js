@@ -2,6 +2,36 @@
 
 document.addEventListener('DOMContentLoaded', () => {
 
+//obtener imagen
+    const imagenHero = document.querySelector('.hero');
+
+    //inicializar las variables
+    let i = 0;
+    let tiempo = 0;
+
+
+    //arreglo con imagenes de fondo
+    const imagenes = ['arriba2.jpg', 'arriba.jpg'];
+    setInterval( () => {
+        imagenHero.style.backgroundPositionY = '-' + tiempo + 'px';
+        
+        if (tiempo > 40) {
+            tiempo = 0;
+
+            imagenHero.style.backgroundImage = "url(../img/" + imagenes[i] + ")";
+            if (i === imagenes.length - 1) {
+                i = 0;
+            } else {
+                i++;
+            }
+            console.log(imagenes[i]);
+        }
+        tiempo ++;
+    }, 100);
+
+
+
+
 //boton flotante footer
     
     const btnFlotante = document.querySelector('.btn-flotante');
@@ -25,3 +55,4 @@ document.addEventListener('DOMContentLoaded', () => {
 
     })
 })
+
